@@ -1,3 +1,32 @@
-a{
-	padding: 1px;
+div{
+	border: 5px;
+	border-style: solid;
+	border-color: #47FFF5;
+}
+body{
+	border: 10px;
+	border-style: solid;
+	border-color: #FF0000;
+	margin: 0;
+}
+section{
+	border: 10px;
+	border-style: solid;
+	border-color: #74FF6D;
+}
+
+article{
+	border: 5px;
+	border-style: solid;
+	border-color: #FFEC7B;
+}
+header{
+	border: 5px;
+	border-style: solid;
+	border-color: #E769FF;
+}
+nav{
+	border: 5px;
+	border-style: solid;
+	border-color: #FF6F55;
 }
