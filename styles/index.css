@@ -18,6 +18,10 @@ body{
   color: #474747;
   font: 12px/25px Arial, Helvetica, sans-serif;
 }
+.contNew a{
+  text-decoration: none;
+  color:#474747;;
+}
 
 /*temporal*/
 #content{
@@ -47,7 +51,7 @@ body{
 
 header{
 	width: 100%;
-	height: 180px;
+	height: 150px;
 }
 
 #webTitle{
@@ -132,8 +136,11 @@ header{
     margin-right: 20px;
     margin-bottom: 8px;
     float: left;
-    width:230px;
+/*    width:230px;
     height:150px;
+*/  
+    width: 35%;
+    height: 90%;
   }
   .imgNew{
     width:100%;
@@ -155,6 +162,7 @@ header{
   overflow: hidden;
   width: 72%;
   background: rgba(255, 255, 255, 0.65);
+  margin-bottom: 20px;
 }
 #semanaNoticia{
 /*  border: solid 10px;
@@ -206,6 +214,46 @@ aside{
     color: rgba(255, 255, 255, 0.9);
 
   }
+
+
+/*Noticias de la semana*/
+
+.noticiaSem{
+  display: block;
+  height: 200px;
+  margin: 0 auto 30px;
+  border-bottom: 2px solid;
+  border-color: gray ;
+}
+.noticiaSem a{
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 90%;
+}
+
+.imgSem{
+  display: block;
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+
+}
+
+.newTitleSem{
+  position: relative;
+  top: -70px;
+  width: 90%;
+  margin: 0 5%;
+  padding-top: 5px;
+  padding-bottom:10px;
+  color: white;
+  background:rgba(0, 0, 0, 0.0) ;
+  transition: background 0.5s;
+}
+.noticiaSem a:hover .newTitleSem{
+  background: rgba(0, 0, 0, 0.5);
+}
 
 
 /*div{
