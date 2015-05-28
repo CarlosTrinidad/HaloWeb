@@ -2,74 +2,219 @@
 	margin: 0;
 	padding: 0;
 }
+/*Redes sociales*/
+#socialNet a{
+  margin-left: 15px;
+  text-decoration: none;
+  color: #AFB8BB;
+}
+#socialNet{
+  padding: 5px;
+  background: rgba(128, 128, 128, 0.5);
+  border-radius: 20px;
+}
+
+body{
+  color: #474747;
+  font: 12px/25px Arial, Helvetica, sans-serif;
+}
+
+/*temporal*/
+#content{
+  width: 95%;
+  margin: 0 auto;
+/*  border: 10px solid;
+*//*  border-color: cyan;
+*/ 
+  
+}
+    html { 
+      background: url(../img/bg.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    #topBar{
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      
+    }
+    h1 img{
+      margin-left: 20px;
+    }
 
 header{
 	width: 100%;
 	height: 180px;
-
 }
 
 #webTitle{
 	margin: 20px auto;
+  color: #D0DDDF;
 
 }
 #socialNet{
 	float: right;
-	margin:-53px auto;
-	padding-right:30px;
-	
+	margin:-53px 30px;
+/*	padding-right:30px;
+*/	
 }
 /*Barra Menu*/
-#navBar{
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
+
+#navBar ul {
+    background: rgba(250, 250, 250, 0.6)/*#ddd*/;
+    list-style: none;
+    width: 100%;
+}
+#navBar li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-width: 25%;
+}
+#navBar a {
+    background: rgba(255, 255, 255, 0.7) /*#ddd*/;
+    color: #444;
+    display: block;
+    font: bold 16px/50px sans-serif;
+    padding: 0 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 1s;
+
+
+}
+
+#navBar li:hover a {
+    background:  rgba(75, 211, 220, 0.7)/*#ccc*/;
+}
+#navBar li ul {
+    float: left;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+    transition: top .2s;
+  }
+
+#navBar li:hover ul {
+    opacity: 1;
+    top: 50px;
+    visibility: visible;
+}
+#navBar li ul li {
+    float: none;
+    width: 100%;
+}
+#navBar li ul a:hover {
+    background: rgba(250, 250, 250, 0.7) /*#bbb*/;
+}
+/*Diferenciar el activo*/
+
+
+/*Noticias*/
+
+  /*Titulos*/
+  .titulo2{
+    background: #73c1c6;
+    color: lightgray;
+    margin-bottom: 20px;
+  }
+
+  /*Imagenes*/
+  .imgDiv{
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 8px;
+    float: left;
+    width:230px;
+    height:150px;
+  }
+  .imgNew{
+    width:100%;
+    height:100%;
+    display: block;
+  }
+  
+  .contNew{
+    float: right;
+    height: auto;
+    width: 60%;
+    position: relative;
+    top: 10%;
+  }
+#ultimasNoticias{
+/*  border: solid 10px;
+  border-color: red;*/
+  float: left;
   overflow: hidden;
+  width: 72%;
+  background: rgba(255, 255, 255, 0.65);
 }
-
-#navBar ul ul {
-  display: none;
-}
-
-#navBar ul{
-  display: inline-table;
-  position: relative;
-  list-style: none;
-}
-#navBar>ul{
-  width: 100%;
-
-}
-#navBar ul li{
-  display: inline;
-  left: 0;
-  right: 0;
+#semanaNoticia{
+/*  border: solid 10px;
+  border-color: green;*/
+  float: right;
+  overflow: hidden;
   width: 25%;
 }
 
-#navBar>ul>li{
-  float: left;
-  background-color: #45b69c;
-  /*temporal*/
-  transition: background-color 2s;
+.noticia{
+  padding-bottom: 20px;
+  width: 97%;
+  height: 200px;
+  margin: 0 auto 30px;
+  border-bottom: 2px solid;
+  border-color: gray ;
 }
 
-#navBar>ul>li:hover>ul{
-  display: block;
-  
+footer{
+  position: relative;
+  margin-top: -50px;
+  height: 50px;
+  clear: both;
+  background: rgba(0, 0, 0, 0.65);
+  color: #EEFDFF;
+  text-align: center;
+  line-height: 50px;
 }
-#navBar ul li:hover>a{
-  background-color: rgba( 0, 0, 0, 0.1);
+
+aside{
+  background: rgba(255, 255, 255, 0.65);
 }
-#navBar ul li a {
-    display: block; 
+/*paginas*/
+  #pags{
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #pags a{
     text-decoration: none;
-    padding: 20px 40px;
-    color: rgb(255, 255, 255);
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.65);
+    color: rgba(0, 0, 0, 0.9);
+    transition: background 1s, color 1s;
+  }
+    #pags a:hover{
+
+    background: rgba(0, 0, 0, 0.65);
+    color: rgba(255, 255, 255, 0.9);
 
   }
-#navBar>ul>li>ul{
-    background-color: #A0a4b8;
 
+
+/*div{
+  border: solid 3px;
+  border-color: green;
 }
+article{
+  border: solid 3px;
+  border-color: yellow;
+}*/
+
 
