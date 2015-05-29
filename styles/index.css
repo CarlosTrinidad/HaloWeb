@@ -12,6 +12,8 @@
   padding: 5px;
   background: rgba(128, 128, 128, 0.5);
   border-radius: 20px;
+  float: right;
+  margin:-53px 30px;
 }
 
 body{
@@ -59,12 +61,7 @@ header{
   color: #D0DDDF;
 
 }
-#socialNet{
-	float: right;
-	margin:-53px 30px;
-/*	padding-right:30px;
-*/	
-}
+
 /*Barra Menu*/
 
 #navBar ul {
@@ -242,17 +239,28 @@ aside{
 
 .newTitleSem{
   position: relative;
-  top: -70px;
   width: 90%;
-  margin: 0 5%;
-  padding-top: 5px;
-  padding-bottom:10px;
+  height: 90%;
+  margin:0 5%;
   color: white;
-  background:rgba(0, 0, 0, 0.0) ;
-  transition: background 0.5s;
+  background:rgba(0, 0, 0, 0.0) no-repeat ;
+  background-image: url(../img/new3.jpg);
+  background-size: 100% 100%;
+  text-align: center;
+  line-height: 30px;
+  transition: background-image 0.1s;
+
 }
 .noticiaSem a:hover .newTitleSem{
-  background: rgba(0, 0, 0, 0.5);
+  background-image: 
+  linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.3)
+    ),
+  url(../img/new3.jpg);
+  background-size: 100% 100%;
+
+
 }
 
 
