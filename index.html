@@ -4,10 +4,37 @@
 	<meta charset="UTF-8">
 	<title>The word of Halo :3</title>
 	<link rel="stylesheet" href="styles/index.css">
+	<script src="scripts/jquery-1.9.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/docs.min.js"></script>
+    <script src="scripts/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="scripts/scrip.js"></script>
+    <script type="text/javascript" src="scripts/jssor.slider.mini.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 	<body>
 
-		<header id="Logo" > 
+      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+<header id="Logo" > 
 				<div id="topBar">
 					<!-- Titulo Y Logo -->
 					<h1 id="webTitle"> 
@@ -17,19 +44,68 @@
 					<!-- Redes Sociales
 						Se abren en otra pestaña
 					 -->
+					 </div>	
+					   <div style="min-height: 50px;margin:0; ">
+     	 <!-- Jssor Slider Begin -->
+        <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+        <!-- ================================================== -->
+        <div id="slider1_container" style="display: none; position: relative; margin: 0 auto;
+        top: 0px; left: 0px; width: 1400px; height: 350px; overflow: hidden;">
+            <!-- Loading Screen -->
+            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+
+                </div>
+                <div style=" position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+                </div>
+            
+            </div>
+
+
+            <!-- Slides Container -->
+            <div u="slides" style="argin:0;cursor: move; position: absolute; left: 0px; top: 0px; width: 1400px; height: 350px; overflow: hidden;">
+            
+                 <div>
+                    <a href="#"><img u="image"  src2="img/slide/halo2.jpg" /></a>
+                </div>
+                <div>
+                   <a href="#"> <img u="image" src2="img/slide/halo3.jpg" /></a>
+                </div>
+            </div>
+            
+            <!--#region Bullet Navigator Skin Begin -->
+            <!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
+           
+            <!-- bullet navigator container -->
+            <div u="navigator" class="jssorb21" style="bottom: 26px; right: 6px;">
+                <!-- bullet navigator item prototype -->
+                <div u="prototype"></div>
+            </div>
+            
+							<!-- Arrow Left -->
+
+            <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;">
+            </span>
+            <!-- Arrow Right -->
+            <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;">
+            </span>
+            <!--#endregion Arrow Navigator Skin End -->
+            <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
+        </div>
+    </div>
 					<div id="socialNet">
 						<a href="http://www.twitter.com" target="_blank" > <img src="img/TT" alt="">Twitter</a>
 						<a href="http://www.facebook.com" target="_blank"><img src="img/FB" alt="">FB</a>
 						<a href="http://www.youtube.com" target="_blank"><img src="img/YT" alt="">YT</a>
 					</div>
 				</div>
-
-
 				<!-- Barra de navegacion -->
 				<nav id="navBar">
 
 					<ul>
-						<li>	<a href="index.html">Noticias</a>	</li>
+						<li>	<a href="Home/News.html">Noticias</a>	</li>
 						<li>	<a href="Juegos.html">Juegos</a>
 									
 									<ul>
@@ -48,6 +124,8 @@
 				</nav>
 		</header>
 		
+
+
 		<div id="content">
 
 	
@@ -76,8 +154,7 @@
 								-etc.-->
 						<div class="contNew">
 							<!-- Titulo Noticia -->
-							<a href="#">
-							<h3 class="newTitle">Halo Master Chief Edition: Actualizado</h3></a>	
+							<h3 class="newTitle">Halo Master Chief Edition: Actualizado</h3>	
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing 
 								elit. Possimus molestiae, quisquam cupiditate 
@@ -98,10 +175,9 @@
 					 <article class="noticia">
 							
 							<!-- Imagen de la noticia -->
-							<a href="#" class="imgDiv">
-								<img class="imgNew" id="prueba" src="img/new2.jpg" alt="">
-							</a>
-							
+							<div class="imgDiv">
+								<img class="imgNew" src="img/new2.jpg" alt="">
+							</div>
 
 							<!-- Contenido de la noticia
 									-Descripcion
@@ -109,7 +185,7 @@
 									-etc.-->
 							<div class="contNew">
 							<!-- Titulo Noticia -->
-							<a href="#"><h3 class="newTitle">Halo 5: Nueva imagen</h3></a>
+							<h3 class="newTitle">Halo 5: Nueva imagen</h3>
 							
 								<p>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus molestiae, quisquam cupiditate voluptatibus cumque quidem ex eum deserunt a saepe, expedita iusto, sint dolores, ipsa quis porro ducimus impedit voluptatum!
@@ -126,9 +202,9 @@
 					 <article class="noticia">
 							
 							<!-- Imagen de la noticia -->
-								<a href="#" class="imgDiv">
-									<img class="imgNew" id="prueba" src="img/new4.jpg" alt="">
-								</a>
+							<div class="imgDiv">
+								<img class="imgNew" src="img/new2.jpg" alt="">
+							</div>
 
 							<!-- Contenido de la noticia
 									-Descripcion
@@ -136,7 +212,7 @@
 									-etc.-->
 							<div class="contNew">
 							<!-- Titulo Noticia -->
-							<a href="#"><h3 class="newTitle">#HuntTheTruth</h3></a>
+							<h3 class="newTitle">Halo 5: Nueva imagen</h3>
 							
 								<p>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus molestiae, quisquam cupiditate voluptatibus cumque quidem ex eum deserunt a saepe, expedita iusto, sint dolores, ipsa quis porro ducimus impedit voluptatum!
@@ -164,23 +240,53 @@
 
 				<!-- Lista de noticias -->
 					<!-- noticia 1 -->
-					<article class="noticiaSem">
-						<a href="#1">
-							<!-- Imagen de la noticia -->
-							<!-- Titulo Noticia -->
-								<h3 class="newTitleSem">Halo 1 CE</h3>
-						</a>
+					<article class="noticia">
+						<!-- Titulo Noticia -->
+						<h3 class="newTitle"> Halo 1 CE</h3>	
+						<!-- Imagen de la noticia -->
+						<div class="imgNew">
+							<img src="img/new3.jpg" alt="">
+						</div>
+
+						<!-- Contenido de la noticia
+								-Descripcion
+								-Fecha de Publicacion
+								-etc.-->
+						<div class="contNew">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, sint.
+							</p>
+							<!-- Fecha y Nombre del que lo publico -->
+							<span class="newData">
+								Mayo 24, 2015 Por Trinidad
+							</span>
+								
+						</div>
 					 </article>	
 					<!-- noticia 2 -->
-					<article class="noticiaSem">
-						<a href="#2">
-						<!-- Imagen de la noticia -->
+					<article class="noticia">
 						<!-- Titulo Noticia -->
-							<h3 class="newTitleSem"> Lorem ipsum dolor sit 
-							amet, consectetur adipisicing elit.</h3>
-						</a>
-					 </article>	
+						<h3 class="newTitle"> Halo 1 CE</h3>	
+						<!-- Imagen de la noticia -->
+						<div class="imgNew">
+							<img src="img/new3.jpg" alt="">
+						</div>
 
+						<!-- Contenido de la noticia
+								-Descripcion
+								-Fecha de Publicacion
+								-etc.-->
+						<div class="contNew">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, sint.
+							</p>
+							<!-- Fecha y Nombre del que lo publico -->
+							<span class="newData">
+								Mayo 24, 2015 Por Trinidad
+							</span>
+								
+						</div>
+					 </article>	
 			
 			</aside>
 		</div>			
