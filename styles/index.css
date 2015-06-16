@@ -373,6 +373,7 @@ th:hover{
 .TemporadaActual{
     width: 30%;
     float: right;
+    height: 1250px;
     margin-bottom: 20px;
 
 }
