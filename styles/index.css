@@ -3,12 +3,12 @@
 	padding: 0;
 }
 /*Redes sociales*/
-#socialNet a{
+.socialNet a{
   margin-left: 15px;
   text-decoration: none;
   color: #AFB8BB;
 }
-#socialNet{
+.socialNet{
   padding: 5px;
   background: rgba(128, 128, 128, 0.5);
   border-radius: 20px;
@@ -26,12 +26,10 @@ body{
 }
 
 /*temporal*/
-#content{
+.content{
   width: 95%;
+  height: auto;
   margin: 0 auto;
-/*  border: 10px solid;
-*//*  border-color: cyan;
-*/ 
   
 }
     html { 
@@ -40,9 +38,10 @@ body{
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-    }
 
-    #topBar{
+}
+
+    .topBar{
       background: rgba(0, 0, 0, 0.6);
       border: 1px solid rgba(0, 0, 0, 0.5);
       
@@ -51,12 +50,12 @@ body{
       margin-left: 20px;
     }
 
-header{
+.Logo{
 	width: 100%;
 	height: 150px;
 }
 
-#webTitle{
+.webTitle{
 	margin: 20px auto;
   color: #D0DDDF;
 
@@ -64,19 +63,19 @@ header{
 
 /*Barra Menu*/
 
-#navBar ul {
+.navBar ul {
     background: rgba(250, 250, 250, 0.6)/*#ddd*/;
     list-style: none;
     width: 100%;
 }
-#navBar li {
+.navBar li {
     float: left;
     margin: 0;
     padding: 0;
     position: relative;
     min-width: 25%;
 }
-#navBar a {
+.navBar a {
     background: rgba(255, 255, 255, 0.7) /*#ddd*/;
     color: #444;
     display: block;
@@ -84,15 +83,20 @@ header{
     padding: 0 25px;
     text-align: center;
     text-decoration: none;
-    transition: background 1s;
+    transition: background 0.5s;
 
 
 }
+/*Diferenciar el activo*/
 
-#navBar li:hover a {
+.active{
+     background:  rgba(75, 11, 220, 0.7);
+}
+
+.navBar li:hover a {
     background:  rgba(75, 211, 220, 0.7)/*#ccc*/;
 }
-#navBar li ul {
+.navBar li ul {
     float: left;
     left: 0;
     opacity: 0;
@@ -103,19 +107,18 @@ header{
     transition: top .2s;
   }
 
-#navBar li:hover ul {
+.navBar li:hover ul {
     opacity: 1;
     top: 50px;
     visibility: visible;
 }
-#navBar li ul li {
+.navBar li ul li {
     float: none;
     width: 100%;
 }
-#navBar li ul a:hover {
+.navBar li ul a:hover {
     background: rgba(250, 250, 250, 0.7) /*#bbb*/;
 }
-/*Diferenciar el activo*/
 
 
 /*Noticias*/
@@ -152,19 +155,16 @@ header{
     position: relative;
     top: 10%;
   }
-#ultimasNoticias{
-/*  border: solid 10px;
-  border-color: red;*/
+.ultimasNoticias{
+
   float: left;
   overflow: hidden;
-  width: 68%;
-  /*width: 72%;*/
+  width: 72%;
   background: rgba(255, 255, 255, 0.65);
   margin-bottom: 20px;
 }
-#semanaNoticia{
-/*  border: solid 10px;
-  border-color: green;*/
+.semanaNoticia{
+  margin-bottom: 20px;
   float: right;
   overflow: hidden;
   width: 25%;
@@ -194,19 +194,19 @@ aside{
   background: rgba(255, 255, 255, 0.65);
 }
 /*paginas*/
-  #pags{
+  .pags{
     width: 20%;
     margin: 0 auto;
     margin-bottom: 20px;
   }
-  #pags a{
+  .pags a{
     text-decoration: none;
     padding: 10px;
     background: rgba(255, 255, 255, 0.65);
     color: rgba(0, 0, 0, 0.9);
-    transition: background 1s, color 1s;
+    transition: background 0.5s, color 0.5s;
   }
-    #pags a:hover{
+  .pags a:hover{
 
     background: rgba(0, 0, 0, 0.65);
     color: rgba(255, 255, 255, 0.9);
@@ -267,113 +267,3 @@ aside{
 }
 
 
-/*div{
-  border: solid 3px;
-  border-color: green;
-}
-article{
-  border: solid 3px;
-  border-color: yellow;
-}*/
-
-
-
-/*Tabla de posiciones*/
-
-.icon-arrow-up{
-color: #59B13B;
-margin-right: 5px;
-}
-.icon-arrow-down{
-  color: #E42C23;
-  margin-right: 5px;
-
-}
-.icon-arrow-right{
-  color: #7D7D7D; 
-  margin-right: 5px;
-
-}
-/*tabla de pos.*/
-#standings{
-  border-collapse: collapse;
-  color: #2E6B9F;
-  text-align: center;
-  width: 100%;
-}
-#standings img{
-  width: 60px;
-  height: 60px;
-  float: left;
-}
-#standings a{
-  text-decoration: none;
-  color: #2E6B9F;
-
-}
-
-tr{
-  background: #E4E4E4;
-  transition: all .2s;
-}
-td{
-  margin: 5px 10px;
-  vertical-align: middle;
-  border: 1px solid white;
-
-}
-
-
-tr:hover{
-  background: rgba(56, 166, 203, 0.6);
-
-}
-
-tr:nth-child(even){
-    background: #FFFFFF;
-
-}
-th{
-  height: 60px;
-  border: 1px solid white;
-  background-color: #26425B;
-  color: white;
-}
-caption{
-  height: 30px;
-  line-height: 30px;
-  background-color: #26425B;
-  color: white;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-th:hover{
-  background-color: rgba(0, 0, 0, 0.4);
-}
-.position1:hover{background: rgba(10, 40, 60, 0.3);}
-.position2:hover{background: rgba(225, 58, 58, 0.3);}
-.position3:hover{background: rgba(70, 70, 100, 0.3);}
-.position4:hover{background: rgba(50, 127, 197, 0.3);}
-.position5:hover{background: rgba(142, 191, 46, 0.3);}
-.position6:hover{background: rgba(67, 165, 225, 0.3);}
-.position7:hover{background: rgba(93, 161, 213, 0.3);}
-.position8:hover{background: rgba(240, 193, 58, 0.3);}
-
-.teamLogo{
-
-}
-.teamName{
-  line-height: 60px;
-}
-
-#tabla{
-  margin-bottom: 30px;
-}
-.TemporadaActual{
-    width: 30%;
-    float: right;
-    height: 1250px;
-    margin-bottom: 20px;
-
-}
