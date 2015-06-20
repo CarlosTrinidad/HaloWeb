@@ -4,20 +4,23 @@
 	<meta charset="UTF-8">
 	<title>The word of Halo :3</title>
 	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="styles/fonts.css">
+	<script type="text/javascript" src="scripts/calendar.js"></script>
+	<link rel="stylesheet" href="styles/torneos.css">
 </head>
 	<body>
 
-		<header id="Logo" > 
-				<div id="topBar">
+		<header class="Logo" > 
+				<div class="topBar">
 					<!-- Titulo Y Logo -->
-					<h1 id="webTitle"> 
+					<h1 class="webTitle"> 
 						<img src="img/logo" alt="">
 						Halo Infinity
 					</h1>
 					<!-- Redes Sociales
 						Se abren en otra pestaña
 					 -->
-					<div id="socialNet">
+					<div class="socialNet">
 						<a href="http://www.twitter.com" target="_blank" > <img src="img/TT" alt="">Twitter</a>
 						<a href="http://www.facebook.com" target="_blank"><img src="img/FB" alt="">FB</a>
 						<a href="http://www.youtube.com" target="_blank"><img src="img/YT" alt="">YT</a>
@@ -26,7 +29,7 @@
 
 
 				<!-- Barra de navegacion -->
-				<nav id="navBar">
+				<nav class="navBar">
 
 					<ul>
 						<li>	<a href="index.html">Noticias</a>	</li>
@@ -42,24 +45,24 @@
 
 						</li>
 						<li>	<a href="Videos.html">Videos</a>		</li>
-						<li>	<a href="Torneos.html">Torneos</a>		</li>
+						<li  class="active">	<a href="Torneos.html">Torneos</a>		</li>
 
 					</ul>
 				</nav>
 		</header>
 		
-		<div id="content">
+		<div class="content">
 
 	
 
-			<!-- slider -->
+			<!-- slclasser -->
 
 
 			<!-- Noticias -->
 
-			<section id="ultimasNoticias">
+			<section class="ultimasNoticias">
 			
-			<h2 id="ultimasTitulo" class="titulo2">Torneos</h2>
+			<h2 class="ultimasTitulo titulo2">Ultimas noticias</h2>
 
 				<!-- Lista de noticias -->
 					<!-- noticia 1 -->
@@ -67,7 +70,7 @@
 						
 						<!-- Imagen de la noticia -->
 						<a href="#" class="imgDiv">
-							<img class="imgNew" id="prueba" src="img/new1.jpeg" alt="">
+							<img class="imgNew prueba" src="img/new1.jpeg" alt="">
 						</a>
 							
 						<!-- Contenido de la noticia
@@ -99,7 +102,7 @@
 							
 							<!-- Imagen de la noticia -->
 							<a href="#" class="imgDiv">
-								<img class="imgNew" id="prueba" src="img/new2.jpg" alt="">
+								<img class="imgNew prueba" src="img/new2.jpg" alt="">
 							</a>
 							
 
@@ -127,7 +130,7 @@
 							
 							<!-- Imagen de la noticia -->
 								<a href="#" class="imgDiv">
-									<img class="imgNew" id="prueba" src="img/new4.jpg" alt="">
+									<img class="imgNew" src="img/new4.jpg" alt="">
 								</a>
 
 							<!-- Contenido de la noticia
@@ -147,62 +150,195 @@
 								</span>
 								
 							</div>
+							
 						 </article>	
+						 				<!--Noticia 3 -->
+
+					 <article class="noticia">
+							
+							<!-- Imagen de la noticia -->
+								<a href="#" class="imgDiv">
+									<img class="imgNew" src="img/new4.jpg" alt="">
+								</a>
+
+							<!-- Contenido de la noticia
+									-Descripcion
+									-Fecha de Publicacion
+									-etc.-->
+							<div class="contNew">
+							<!-- Titulo Noticia -->
+							<a href="#"><h3 class="newTitle">#HuntTheTruth</h3></a>
+							
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus molestiae, quisquam cupiditate voluptatibus cumque quidem ex eum deserunt a saepe, expedita iusto, sint dolores, ipsa quis porro ducimus impedit voluptatum!
+								</p>
+								<!-- Fecha y Nombre del que lo publico -->
+								<span class="newData">
+									Mayo 11, 2015 Por Carlos
+								</span>
+								
+							</div>
+							
+						 </article>
+	
+
 
 
 				<!-- paginas -->
-				<div id="pags">
+				<div class="pags">
 					<a href="index.html/page/1">1</a>
 					<a href="index.html/page/2">2</a>
 					<a href="index.html/page/3">3</a>
 				</div>
 			</section>
 		
-			<!-- Noticia de la semana -->
-			<aside id="semanaNoticia">
-			<h2 id="semanaTitulo" class="titulo2" >Noticia de la Semana</h2>
+	<!-- Informacion sobre la temporada -->
+			<!--Proximos eventos -->			
 
-				<!-- Lista de noticias -->
-					<!-- noticia 1 -->
-					<article class="noticiaSem">
-						<a href="#1">
-							<!-- Imagen de la noticia -->
-								<img class="imgSem" src="img/new3.jpg" alt="">
-							<!-- Titulo Noticia -->
-								<h3 class="newTitleSem"> Halo 1 CE</h3>
-						</a>
-					 </article>	
-					<!-- noticia 2 -->
-					<article class="noticiaSem">
-						<a href="#2">
-						<!-- Imagen de la noticia -->
-							<img class="imgSem" src="img/new3.jpg" alt="">
-						<!-- Titulo Noticia -->
-							<h3 class="newTitleSem"> Lorem ipsum dolor sit 
-							amet, consectetur adipisicing elit.</h3>
-						</a>
-					 </article>	
-
-			
+			<!-- Tabla de pos.-->			
+			<aside class="TemporadaActual">
+					<article id="proxEvnts">
+						<h2 class="titulo2">Proximos Eventos</h2>
+					</article>
 			</aside>
-			<aside id="semanaNoticia">
-			<h2 id="semanaTitulo" class="titulo2" >Noticia de la Semana</h2>
+
+			<aside class="TemporadaActual">
+				<article id="tabla">
+						<h2 class="titulo2">Tabla de Posiciones</h2>
+						<table id="standings">
+						<caption>Tabla de Posiciones 2015</caption>
+							<tr>
+								<th>Posición</th>
+								<th>Equipo</th>
+								<th>Puntos</th>
+							</tr>
+							<tr class="position1">
+								<td>
+									<div class="tendencia"><span class="icon-arrow-right"></span>1</div>
+								</td>
+								<td>
+									<a href="#">
+										<div class="teamLogo">
+											<img src="img/eg.jpg" alt="">
+											<span class="teamName" >EvilGeniuses</span>
+										</div>
+									</a>
+								</td>
+								<td>1275</td>
+							</tr>
+							<tr class="position2">
+								<td>
+									<div class="tendencia"> <span class="icon-arrow-right" ></span>2</div>
+
+								</td>
+								<td><a href="#">
+									<div class="teamLogo">
+									<img src="img/denial.jpg" alt="">
+									<span class="teamName" >Denial</span>
+									</div>
+							</a></td>
+								<td>900</td>
+							</tr>
+							<tr class="position3">
+								<td>
+									<div class="tendencia"> <span class="icon-arrow-up" ></span>3</div>
+
+								</td>
+								<td><a href="#">
+									<div class="teamLogo">
+									<img src="img/winter.jpg" alt="">
+									<span class="teamName" >Winterfox</span>
+									</div>
+							</a></td>
+								<td>500</td>
+							</tr>
+							<tr class="position4">
+								<td>
+									<div class="tendencia"> <span class="icon-arrow-down" ></span>4</div>
+
+								</td>
+								<td><a href="#">
+									<div class="teamLogo">
+									<img src="img/c9.jpg" alt="">
+									<span class="teamName" >Cloud 9</span>
+									</div>
+							</a></td>
+								<td>500</td>
+							</tr>
+							<tr class="position5">
+
+								<td>
+									<div class="tendencia"> <span class="icon-arrow-up" ></span>5</div>
+
+								</td>
+								<td><a href="#">
+									<div class="teamLogo">
+									<img src="img/clg.jpg" alt="">
+									<span class="teamName" >Counter Logic Gaming</span>
+									</div>
+								</a></td>
+								<td>300</td>
+							</tr>
+							<tr class="position6">
+								<td>
+									<div class="tendencia"> <span class="icon-arrow-down" ></span>6</div>
+
+								</td>
+								<td><a href="#">
+									<div class="teamLogo">
+									<img src="img/optic.jpg" alt="">
+									<span class="teamName" >OpTic Gaming</span>
+									</div>
+								</a></td>
+								<td>240</td>
+							</tr>
+							<tr class="position7">
+								<td>
+									<div class="tendencia"> <span class="icon-arrow-right" ></span>7</div>
+
+								</td>
+								<td><a href="#">
+									<div class="teamLogo">
+									<img src="img/lq.jpg" alt="">
+									<span class="teamName" >Team Liquid</span>
+									</div>
+								</a></td>
+								<td>210</td>
+							</tr>
+							<tr class="position8">
+								<td>
+									<div class="tendencia"> <span class="icon-arrow-down" ></span>8</div>
+
+								</td>
+								<td><a href="#">
+									<div class="teamLogo">
+									<img src="img/ex.jpg" alt="">
+									<span class="teamName" >eXcellence</span>
+									</div>
+							</a></td>
+								<td>185</td>
+							</tr>
+						</table>
+				</article>
+			</aside>
+
+			<!-- Noticia de la semana -->
+			<aside class="semanaNoticia">
+			<h2 class="semanaTitulo titulo2" >Noticia de la Semana</h2>
 
 				<!-- Lista de noticias -->
 					<!-- noticia 1 -->
 					<article class="noticiaSem">
 						<a href="#1">
 							<!-- Imagen de la noticia -->
-								<img class="imgSem" src="img/new3.jpg" alt="">
 							<!-- Titulo Noticia -->
-								<h3 class="newTitleSem"> Halo 1 CE</h3>
+								<h3 class="newTitleSem">Halo 1 CE</h3>
 						</a>
 					 </article>	
 					<!-- noticia 2 -->
 					<article class="noticiaSem">
 						<a href="#2">
 						<!-- Imagen de la noticia -->
-							<img class="imgSem" src="img/new3.jpg" alt="">
 						<!-- Titulo Noticia -->
 							<h3 class="newTitleSem"> Lorem ipsum dolor sit 
 							amet, consectetur adipisicing elit.</h3>
