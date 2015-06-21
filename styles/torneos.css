@@ -143,9 +143,32 @@ th:hover{
   margin-bottom: 30px;
 }
 .TemporadaActual{
-    width: 30%;
-    float: right;
+    background: rgba(255, 255, 255, 0.65);
+
+    width: 100%;
+/*    width: 30%;
+    float: right;*/
     height: auto;
     margin-bottom: 20px;
       overflow: hidden;
+}
+.TemporadaActual2{
+
+    width: 100%;
+    /*    width: 30%;
+    float: right;
+    */
+    height: auto;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+#col2{
+  width: 30%;
+}
+.semanaNoticia{
+  float: none;
+  right: 0;
+  width: 90%;
+  margin:0 auto;
+  margin-bottom: 20px;
 }
