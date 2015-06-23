@@ -1,0 +1,148 @@
+video{
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	height: auto;
+
+}
+hr{
+	margin-top: 20px;
+}
+
+.ultimasNoticias{
+	width: 100%;
+	height: auto;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+}
+
+.categoria{
+float: left;
+width: 28%;
+height: 200px;
+display: inline-block;
+margin-top: 20px;
+margin-bottom: 70px;
+transform: scale(1,1);
+
+
+-webkit-transition: transform .3s;
+-o-transition:  transform .3s;
+transition:transform .3s;
+
+}
+.ultimasNoticias img{
+	width: 100%;
+	height: 200px;
+}
+
+
+.videoPost{
+		transform: scale(1,1);
+
+-webkit-transition: transform .3s;
+-o-transition:  transform .3s;
+transition:transform .3s;
+}
+.videoPost a{
+	text-decoration: none;
+}
+a:hover .videoPost{
+transform: scale(1.15,1.18);
+}
+a:hover .icon-play2{
+text-shadow: 0 0 10px #FF739B;
+}
+.videoPost h3{
+	color: gray;
+}
+.icon-play2{
+	position: absolute;
+	z-index: 30;
+/*	top: -64%;
+	left:43%;*/
+	top:40%;
+	left:40%;
+	font-size: 48px;
+	color: #CC3C62;
+}
+.col1{
+	margin-left:3% ;
+
+}
+.col2{
+	margin-left:3% ;
+	margin-right:3% ;
+}
+.col3{
+	margin-right:3% ;
+
+}
+
+.playlist{
+width: 95%;
+height: 500px;
+margin: 0 auto;
+}
+
+.popUp {
+	position: fixed;
+	top: -20px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.85);
+	z-index: 1;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.popUp:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.popUp > div {
+	width: 70%;
+	height: 500px;
+	position: relative;
+	margin: 5% auto;
+	padding: 5px 20px 13px 20px;
+	background: #fff;
+
+}
+
+.popUp p{
+	padding:20px;
+}
+figure{
+	width: 90%;
+	height: 360px;
+	margin: 20px auto;
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.close:hover { background: #00d9ff; }
+
+.fila h2{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 24px;
+	color: black;
+}
+
