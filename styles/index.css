@@ -85,9 +85,9 @@ width: 95%;
 
 /*temporal*/
 .content{
-  width: 95%;
+  width: 95% ;
   height: auto;
-  margin: 0 auto;
+  margin: 100px auto;
   
 }
     html { 
@@ -106,8 +106,10 @@ width: 95%;
     }
 
 .Logo{
-  width: 100%;
-  height: 150px;
+	 width: 95%;
+  height: 100%;
+
+  margin: 0px auto;
 }
 
 .webTitle{
@@ -314,10 +316,10 @@ aside{
   height: 90%;
   margin:0 5%;
    text-shadow: 0 2px 0 black;
-
+overflow: hidden;
   color: white;
   background:rgba(0, 0, 0, 0.0) no-repeat ;
-  background-image: url(../img/new3.jpg);
+background-image: url(../img/torneos/new3.jpg);
   background-size: 100% 100%;
   text-align: center;
   line-height: 30px;
@@ -326,14 +328,14 @@ aside{
 
 }
 .noticiaSem a:hover .newTitleSem{
-  background-image: 
-  -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(../img/new3.jpg);
+
+  -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(../img/torneos/new3.jpg);
   background-image: 
   linear-gradient(
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.3)
     ),
-  url(../img/new3.jpg);
+  url(../img/torneos/new3.jpg);
   background-size: 100% 100%;
 
 
@@ -361,14 +363,14 @@ hr{
   width: 100%;
 }
 .newTitleSem{
-    background-image: 
-  -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(../img/new3.jpg);
-  background-image: 
+    background-image: url(../img/new3.jpg);
+  -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), 
+  background-image:
   linear-gradient(
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.3)
     ),
-  url(../img/new3.jpg);
+url(../img/torneos/new3.jpg);
   background-size: 100% 100%;
 }
 
@@ -387,13 +389,16 @@ overflow: hidden;
 
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   .imgDiv{
     width: 100%;
   }
-
+.socialNet{
+  display: none;
+}
   .webTitle{
-  width: 100%;
+  width: none;
+ margin: 10px auto; 
   }
   .newTitle{
   font-size: 16px;
@@ -422,5 +427,29 @@ overflow: hidden;
     width: 90%;
   }
 }
+
+
+
+
+@media screen and (max-width: 300px) {
+ 
+  .newTitleSem{
+ overflow: hidden;
+
+  }
+  
+  .pags{
+      width: 35%;
+  }
+  footer{
+    font-size: 8px;
+
+  } 
+
+  .navBar a{
+    font: bold 86%/50px sans-serif;
+  }
+}
+
 
 
