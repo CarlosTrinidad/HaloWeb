@@ -4,40 +4,79 @@
 	<meta charset="UTF-8">
 	<title>The word of Halo :3</title>
 	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" type="text/css" href="styles/estilos.css">
+	<link rel="stylesheet" type="text/css" href="styles/fonts.css">
+	<script src="scripts/jquery-1.9.1.min.js"></script>
+	<script src="scripts/jquery.slides.js"></script>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+			<link rel="shortcut icon" type="image/icon" href="img/logo_.ico">
+
 </head>
 	<body>
+<!-- Condiciones de inicio del Slideshow-->
+<script >
+ $(function(){
+      $(".slides").slidesjs({
+     play: {
+      active: false,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+      effect: "fade",
+        // [string] Can be either "slide" or "fade".
+      interval: 6000,
+        // [number] Time spent on each slide in milliseconds.
+      auto: true,
+        // [boolean] Start playing the slideshow on load.
+      swap: true,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: false,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 2500
+        // [number] restart delay on inactive slideshow
+    }
+      });
+    });
+</script>
 
 		<header class="Logo" > 
 				<div class="topBar">
 					<!-- Titulo Y Logo -->
 					<h1 class="webTitle"> 
-						<img src="img/logo" alt="">
+					<img src="img/logo.png" alt="">
 						Halo Infinity
 					</h1>
 					<!-- Redes Sociales
 						Se abren en otra pestaña
 					 -->
+					
 					<div class="socialNet">
-						<a href="http://www.twitter.com" target="_blank" > <img src="img/TT" alt="">Twitter</a>
-						<a href="http://www.facebook.com" target="_blank"><img src="img/FB" alt="">FB</a>
-						<a href="http://www.youtube.com" target="_blank"><img src="img/YT" alt="">YT</a>
+							<a href="http://www.twitter.com" target="_blank" > <img src="img/TT.png" alt=""></a>
+						<a href="http://www.facebook.com" target="_blank"><img src="img/FB.png" alt=""></a>
+						<a href="http://www.youtube.com" target="_blank"><img src="img/YT.png" alt=""></a>
 					</div>
+					<!-- Slideshow -->
+					 <div class="slides" >
+						<a href="#"> <img src="img/slide/1.jpg"></a>
+						<a href="#"><img src="img/slide/2.jpg"></a>
+						<a href="#"><img src="img/slide/halo2.jpg"></a>
+						<a href="#"><img src="img/slide/halo3.jpg"></a>
+							
+					</div>
+				
 				</div>
-
 
 				<!-- Barra de navegacion -->
 				<nav class="navBar">
 
 					<ul>
 						<li  class="active">	<a href="index.html">Noticias</a>	</li>
-						<li>	<a href="Juegos.html">Juegos</a>
+						<li>	<a href="#">Juegos</a>
 									
 									<ul>
-										<li><a href="#">Halo 1</a></li>
-										<li><a href="#">Halo 2</a></li>
-										<li><a href="#">Halo 3</a></li>
-										<li><a href="#">Halo 4</a></li>
-										<li><a href="#">Halo Reach</a></li>
+									<li><a href="Halo1.html">Halo 1</a></li>
+										<li><a href="Halo2.html">Halo 2</a></li>
+										<li><a href="Halo3.html">Halo 3</a></li>
+										<li><a href="Halo4.html">Halo Reach</a></li>
 									</ul>
 
 						</li>
@@ -66,8 +105,8 @@
 					<article class="noticia">
 						
 						<!-- Imagen de la noticia -->
-						<a href="#" class="imgDiv">
-							<img class="imgNew" src="img/new1.jpeg" alt="">
+						<a href="noticia1ex.html" class="imgDiv">
+							<img class="imgNew" src="img/index/new1.jpeg" alt="">
 						</a>
 							
 						<!-- Contenido de la noticia
@@ -77,7 +116,7 @@
 								-etc.-->
 						<div class="contNew">
 							<!-- Titulo Noticia -->
-							<a href="#"> <h3 class="newTitle">Halo Master Chief Edition: Actualizado</h3></a>
+							<a href="noticia1ex.html" <h3 class="newTitle">Halo Master Chief Edition: Actualizado</h3></a>
 						<!-- Fecha y Nombre del que lo publico -->
 	
 							<span class="diaAutor">
@@ -87,17 +126,19 @@
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat hic, modi! Veniam esse consequuntur deserunt inventore delectus neque excepturi error magnam? Praesentium tempora accusantium doloribus modi dolorem ex nostrum ratione!
 							</p>
-							<a href="#" class="masInfo">Leer Mas</a>
+							<a href="noticia1ex.html" class="masInfo">Leer Mas</a>
 								
 						</div>
+						<div style="clear: both;"></div> 
+
 					 </article>	
                 <hr>
 					<!-- noticia 2 -->
 					<article class="noticia">
 						
 						<!-- Imagen de la noticia -->
-						<a href="#" class="imgDiv">
-							<img class="imgNew" src="img/new2.jpg" alt="">
+						<a href="noticia1ex.html" class="imgDiv">
+							<img class="imgNew" src="img/index/new2.jpg" alt="">
 						</a>
 							
 						<!-- Contenido de la noticia
@@ -107,7 +148,7 @@
 								-etc.-->
 						<div class="contNew">
 							<!-- Titulo Noticia -->
-							<a href="#"> <h3 class="newTitle">Halo 5: Nueva imagen</h3></a>
+							<a href="noticia1ex.html" <h3 class="newTitle">Halo 5: Nueva imagen</h3></a>
 						<!-- Fecha y Nombre del que lo publico -->
 	
 							<span class="diaAutor">
@@ -117,17 +158,18 @@
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat hic, modi! Veniam esse consequuntur deserunt inventore delectus neque excepturi error magnam? Praesentium tempora accusantium doloribus modi dolorem ex nostrum ratione!
 							</p>
-							<a href="#" class="masInfo">Leer Mas</a>
+							<a href="noticia1ex.html" class="masInfo">Leer Mas</a>
 								
 						</div>
+						<div style="clear: both;"></div> 
 					 </article>	
                  <hr>
 					<!-- noticia 3-->
 					<article class="noticia">
 						
 						<!-- Imagen de la noticia -->
-						<a href="#" class="imgDiv">
-							<img class="imgNew" src="img/new3.jpg" alt="">
+						<a href="noticia1ex.html" class="imgDiv">
+							<img class="imgNew" src="img/index/new3.jpg" alt="">
 						</a>
 							
 						<!-- Contenido de la noticia
@@ -137,7 +179,7 @@
 								-etc.-->
 						<div class="contNew">
 							<!-- Titulo Noticia -->
-							<a href="#"> <h3 class="newTitle">Halo Master Chief Edition: Actualizado</h3></a>
+							<a href="noticia1ex.html"> <h3 class="newTitle">Halo Master Chief Edition: Actualizado</h3></a>
 						<!-- Fecha y Nombre del que lo publico -->
 	
 							<span class="diaAutor">
@@ -147,17 +189,18 @@
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat hic, modi! Veniam esse consequuntur deserunt inventore delectus neque excepturi error magnam? Praesentium tempora accusantium doloribus modi dolorem ex nostrum ratione!
 							</p>
-							<a href="#" class="masInfo">Leer Mas</a>
+							<a href="noticia1ex.html" class="masInfo">Leer Mas</a>
 								
 						</div>
+						<div style="clear: both;"></div> 
 					 </article>	
                     <hr>
 					<!-- noticia 4-->
 					<article class="noticia">
 						
 						<!-- Imagen de la noticia -->
-						<a href="#" class="imgDiv">
-							<img class="imgNew" src="img/new1.jpeg" alt="">
+						<a href="noticia1ex.html" class="imgDiv">
+							<img class="imgNew" src="img/index/new1.jpeg" alt="">
 						</a>
 							
 						<!-- Contenido de la noticia
@@ -167,7 +210,7 @@
 								-etc.-->
 						<div class="contNew">
 							<!-- Titulo Noticia -->
-							<a href="#"> <h3 class="newTitle">Halo Master Chief Edition: Actualizado</h3></a>
+							<a href="noticia1ex.html"> <h3 class="newTitle">Halo Master Chief Edition: Actualizado</h3></a>
 						<!-- Fecha y Nombre del que lo publico -->
 	
 							<span class="diaAutor">
@@ -177,9 +220,10 @@
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat hic, modi! Veniam esse consequuntur deserunt inventore delectus neque excepturi error magnam? Praesentium tempora accusantium doloribus modi dolorem ex nostrum ratione!
 							</p>
-							<a href="#" class="masInfo">Leer Mas</a>
+							<a href="noticia1ex.html" class="masInfo">Leer Mas</a>
 								
 						</div>
+						<div style="clear: both;"></div> 
 					 </article>	
                  <hr>
 					 <!-- Lista de noticias -->
@@ -187,8 +231,8 @@
 					<article class="noticia">
 						
 						<!-- Imagen de la noticia -->
-						<a href="#" class="imgDiv">
-							<img class="imgNew" src="img/new1.jpeg" alt="">
+						<a href="noticia1ex.html" class="imgDiv">
+							<img class="imgNew" src="img/index/new1.jpeg" alt="">
 						</a>
 							
 						<!-- Contenido de la noticia
@@ -198,7 +242,7 @@
 								-etc.-->
 						<div class="contNew">
 							<!-- Titulo Noticia -->
-							<a href="#"> <h3 class="newTitle">Halo Master Chief Edition: Actualizado</h3></a>
+							<a href="noticia1ex.html"> <h3 class="newTitle">Halo Master Chief Edition: Actualizado</h3></a>
 						<!-- Fecha y Nombre del que lo publico -->
 	
 							<span class="diaAutor">
@@ -208,17 +252,18 @@
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat hic, modi! Veniam esse consequuntur deserunt inventore delectus neque excepturi error magnam? Praesentium tempora accusantium doloribus modi dolorem ex nostrum ratione!
 							</p>
-							<a href="#" class="masInfo">Leer Mas</a>
+							<a href="noticia1ex.html" class="masInfo">Leer Mas</a>
 								
 						</div>
+						<div style="clear: both;"></div> 
 					 </article>	
                     <hr>
 					<!-- noticia 2 -->
 					<article class="noticia">
 						
 						<!-- Imagen de la noticia -->
-						<a href="#" class="imgDiv">
-							<img class="imgNew" src="img/new2.jpg" alt="">
+						<a href="noticia1ex.html" class="imgDiv">
+							<img class="imgNew" src="img/index/new2.jpg" alt="">
 						</a>
 							
 						<!-- Contenido de la noticia
@@ -228,7 +273,7 @@
 								-etc.-->
 						<div class="contNew">
 							<!-- Titulo Noticia -->
-							<a href="#"> <h3 class="newTitle">Halo 5: Nueva imagen</h3></a>
+							<a href="noticia1ex.html"> <h3 class="newTitle">Halo 5: Nueva imagen</h3></a>
 						<!-- Fecha y Nombre del que lo publico -->
 	
 							<span class="diaAutor">
@@ -238,17 +283,18 @@
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat hic, modi! Veniam esse consequuntur deserunt inventore delectus neque excepturi error magnam? Praesentium tempora accusantium doloribus modi dolorem ex nostrum ratione!
 							</p>
-							<a href="#" class="masInfo">Leer Mas</a>
+							<a href="noticia1ex.html" class="masInfo">Leer Mas</a>
 								
 						</div>
+						<div style="clear: both;"></div> 
 					 </article>	
                  <hr>
 					<!-- noticia 3-->
 					<article class="noticia">
 						
 						<!-- Imagen de la noticia -->
-						<a href="#" class="imgDiv">
-							<img class="imgNew" src="img/new3.jpg" alt="">
+						<a href="noticia1ex.html" class="imgDiv">
+							<img class="imgNew" src="img/index/new3.jpg" alt="">
 						</a>
 							
 						<!-- Contenido de la noticia
@@ -258,7 +304,7 @@
 								-etc.-->
 						<div class="contNew">
 							<!-- Titulo Noticia -->
-							<a href="#"> <h3 class="newTitle">Halo Master Chief Edition: Actualizado</h3></a>
+							<a href="noticia1ex.html"> <h3 class="newTitle">Halo Master Chief Edition: Actualizado</h3></a>
 						<!-- Fecha y Nombre del que lo publico -->
 	
 							<span class="diaAutor">
@@ -268,17 +314,18 @@
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat hic, modi! Veniam esse consequuntur deserunt inventore delectus neque excepturi error magnam? Praesentium tempora accusantium doloribus modi dolorem ex nostrum ratione!
 							</p>
-							<a href="#" class="masInfo">Leer Mas</a>
+							<a href="noticia1ex.html" class="masInfo">Leer Mas</a>
 								
 						</div>
+						<div style="clear: both;"></div> 
 					 </article>	
                  <hr>
 					<!-- noticia 4-->
 					<article class="noticia">
 						
 						<!-- Imagen de la noticia -->
-						<a href="#" class="imgDiv">
-							<img class="imgNew" src="img/new1.jpeg" alt="">
+						<a href="noticia1ex.html" class="imgDiv">
+							<img class="imgNew" src="img/index/new1.jpeg" alt="">
 						</a>
 							
 						<!-- Contenido de la noticia
@@ -288,7 +335,7 @@
 								-etc.-->
 						<div class="contNew">
 							<!-- Titulo Noticia -->
-							<a href="#"> <h3 class="newTitle">Halo Master Chief Edition: Actualizado</h3></a>
+							<a href="noticia1ex.html"> <h3 class="newTitle">Halo Master Chief Edition: Actualizado</h3></a>
 						<!-- Fecha y Nombre del que lo publico -->
 	
 							<span class="diaAutor">
@@ -298,9 +345,10 @@
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat hic, modi! Veniam esse consequuntur deserunt inventore delectus neque excepturi error magnam? Praesentium tempora accusantium doloribus modi dolorem ex nostrum ratione!
 							</p>
-							<a href="#" class="masInfo">Leer Mas</a>
+							<a href="noticia1ex.html" class="masInfo">Leer Mas</a>
 								
 						</div>
+						<div style="clear: both;"></div> 
 					 </article>	
             <hr>
 				<!-- paginas -->
@@ -320,7 +368,7 @@
 				<!-- Lista de noticias -->
 					<!-- noticia 1 -->
 					<article class="noticiaSem">
-						<a href="#1">
+						<a href="noticia1ex.html">
 							<!-- Imagen de la noticia -->
 							<!-- Titulo Noticia -->
 								<h3 class="newTitleSem">Halo 1 CE</h3>
@@ -329,7 +377,7 @@
                 <hr>
 					<!-- noticia 2 -->
 					<article class="noticiaSem">
-						<a href="#2">
+						<a href="noticia1ex.html">
 						<!-- Imagen de la noticia -->
 						<!-- Titulo Noticia -->
 							<h3 class="newTitleSem"> Lorem ipsum dolor sit 
